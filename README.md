@@ -1,267 +1,248 @@
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd-M1
-# IAPR-1- Module 1 - FoC
-## 1. Implementation of basic C programs using Literals,Consonants, Variables, Data types.
-## 2. Implementation of different categories of operators.
-# Ex.No:1
-  Build a C program to demonstrate the usage of different types of literals: integer, float, character, and string.  
-# Date : 25.04.2026
-# Aim:
-To build a C program that prints integer, float,character, and string literals on the console using the printf() function.
-# Algorithm:
-### Step 1:
-  Start
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3: 
-  Inside the main() function, use printf() to display each literal along with its size in bytes using sizeof() :
-  
-   3.1 Integer literal (e.g., 10) using `%d`
-   
-   3.2 Float literal (e.g., 3.14) using `%f`
-   
-   3.3 Character literal (e.g., 'A') using `%c`
-   
-   3.4 String literal (e.g., "Hello C") using `%s`
-   
-### Step 4: 
-   Stop
-# Program:
-```
-#include <stdio.h>
-int main() {
-printf("Integer Literal: %d\n", 10);
-printf("Size of integer: %lu bytes\n\n", sizeof(10));
-printf("Float Literal: %f\n", 3.14);
-printf("Size of float: %lu bytes\n\n", sizeof(3.14));
-printf("Character Literal: %c\n", 'A');
-printf("Size of character: %lu bytes\n\n", sizeof('A'));
-printf("String Literal: %s\n", "Hello C");
-printf("Size of string: %lu bytes\n", sizeof("Hello C"));
-return 0; }
-}
-```
-# Output:
-<img width="391" height="341" alt="Screenshot 2026-06-01 100732" src="https://github.com/user-attachments/assets/b3f28704-d285-4fdc-9c4f-86c6abc747e0" />
+# EX-01-Datatypes-Operators
 
-# Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
+## AIM:
 
+Write a C program to read 3 characters one by one and print the characters in a reverse order.
 
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd
-# IAPR-1- Module 1 - FoC
-# Ex.No:2
-  Build a C program to display the value of a macro constant and a constant variable.
-# Date : 26.04.2026
-# Aim:
-  To build a C program that demonstrates the use of macro constants and constant variables.
-# Algorithm:
-### Step 1:
-  Start  
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3: 
-  Define a macro constant `PI` with value `3.14159` using `#define`.
-### Step 4: 
-   Inside `main()`:
-   
-   4.1 Declare a constant integer variable `DAYS`
-   
-   4.2 Initialize it with the value `7`
-   
-### Step 5:  
-  Use `printf()` to display the values of `PI` and `DAYS`.     
-### Step 6:  
-  Stop
-# Program:
-```
-#include <stdio.h>
-#define PI 3.14159
-int main() {
-const int DAYS = 7;
-printf("Value of PI (Macro Constant): %f\n", PI);
-printf("Value of DAYS (Constant Variable): %d\n", DAYS);
-return 0;
-}
-```
-# Output:
-<img width="474" height="159" alt="Screenshot 2026-06-01 101039" src="https://github.com/user-attachments/assets/c4f3d322-a564-4f95-affc-a326848e5271" />
+## ALGORITHM:
 
-# Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
+1. Declare three character variables to store the input characters.
+2. Use the scanf function to read the characters one by one from the user.
+3. Print the characters in reverse order using the printf function.
+4. End the program.
 
+## PROGRAM:
 
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd
-# IAPR-1- Module 1 - FoC
-# Ex.No:3
-  Build a C program to demonstrate the use of different data types such as int, float, double, and char, and display their values using printf().
-# Date : 27.04.2026
-# Aim:
-  To build a C program that declares variables of various data types—integer, float, double, and character—initializes them, and prints their values on the screen.
-# Algorithm:
-### Step 1:
-  Start
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3: 
-  Inside main(), declare and initialize variables of types int, float, double, and char.
-### Step 4: 
-   Display their values using printf().
-### Step 5:    
-   Stop
-# Program:
-```
-#include <stdio.h>
-int main() {
-int a = 10;
-float b = 3.14f;
-double c = 123.456;
-char d = 'A';
-printf("Integer value: %d\n", a);
-printf("Float value: %f\n", b);
-printf("Double value: %lf\n", c);
-printf("Character value: %c\n", d);
-return 0;
-}
-```
-# Output:
-<img width="372" height="181" alt="Screenshot 2026-06-01 101251" src="https://github.com/user-attachments/assets/749be32b-85cc-4f15-9046-ade7922de0e2" />
-
-# Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
-
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd
-# IAPR-1- Module 1 - FoC
-# Ex.No:4
-  Build a C program to perform arithmetic and bitwise operations on two integers entered by the user. The program should display: Arithmetic operations: addition, subtraction, multiplication, division, and remainder. Bitwise operations: AND, OR, XOR, left shift, right shift, and NOT.
-# Date : 27.04.2026 
-# Aim:
-  To build a C program that takes two integers as input and demonstrates the arithmetic and bitwise operations, displaying the results of each operation.
-# Algorithm:
-### Step 1:
-  Start
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3: 
-  Declare two integer variables a and b.
-### Step 4: 
-   Prompt the user to enter two integers and read the input using scanf().
-### Step 5:    
-   Perform arithmetic operations on a and b:
-   #### Sum (a + b)
-   #### Difference (a - b)
-   #### Product (a * b)
-   #### Quotient (a / b)
-   #### Remainder (a % b)
-### Step 6: 
-  Perform bitwise operations on a and b:
-  #### AND (a &amp; b)
-  #### OR (a | b)
-  #### XOR (a ^ b)
-  #### Left shift (a << b)
-  #### Right shift (a >> b)
-  #### Bitwise NOT of a (~a) and b (~b)
-### Step 7:   
-  Display the results of all operations using printf().
-### Step 8:   
-  Stop
-# Program:
 ```
 #include <stdio.h>
 
 int main() {
-    int a, b;
+    char a, b, c;
 
-    printf("Enter two integers: ");
-    scanf("%d %d", &a, &b);
+    printf("Enter first character: ");
+    scanf(" %c", &a);
 
-    printf("\n--- Arithmetic Operations ---\n");
-    printf("Addition: %d\n", a + b);
-    printf("Subtraction: %d\n", a - b);
-    printf("Multiplication: %d\n", a * b);
+    printf("Enter second character: ");
+    scanf(" %c", &b);
 
-    if (b != 0) {
-        printf("Division: %d\n", a / b);
-        printf("Remainder: %d\n", a % b);
-    } else {
-        printf("Division and Remainder: Not possible (division by zero)\n");
-    }
+    printf("Enter third character: ");
+    scanf(" %c", &c);
 
-    printf("\n--- Bitwise Operations ---\n");
-    printf("AND: %d\n", a & b);
-    printf("OR: %d\n", a | b);
-    printf("XOR: %d\n", a ^ b);
-    printf("Left Shift (a << b): %d\n", a << b);
-    printf("Right Shift (a >> b): %d\n", a >> b);
-    printf("NOT of a: %d\n", ~a);
-    printf("NOT of b: %d\n", ~b);
+    printf("Characters in reverse order: %c %c %c\n", c, b, a);
 
     return 0;
 }
+
 ```
-# Output:
-<img width="430" height="600" alt="Screenshot 2026-06-01 101725" src="https://github.com/user-attachments/assets/e05e24f2-742e-4819-8c71-586ac158adf6" />
 
-# Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
+## OUTPUT:
+<img width="1265" height="744" alt="M11" src="https://github.com/user-attachments/assets/bff9e040-8245-4e46-a97a-d972dccb6e64" />
 
 
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd
-# IAPR-1- Module 1 - FoC
-# Ex.No:5
-  Develop a C program to check whether a given character is a vowel, consonant, digit, or special symbol using the ternary operator.
-# Date : 20.04.2026
-# Aim:
-  To develop and implement a C program that classifies a character as a vowel, consonant, digit, or special symbol using the ternary operator.
-# Algorithm:
-### Step 1:
-  Start
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3: 
-  Input a character ch from the user.
-### Step 4: 
-   Check if ch is a digit ('0' to '9').
-   
-   If true → Print "Digit" → Go to Step 8.
-   
-   If false → Go to Step 5.
-   
-### Step 5:    
-   Check if ch is an alphabet letter ('A' - 'Z' or 'a' – 'z').
-   
-   If true → Go to Step 6.
-   
-   If false → Go to Step 7.
-   
-### Step 6: 
-   Check if ch is a vowel (a, e, i, o, u or A, E, I, O, U).
-   
-   If true → Print "Vowel" → Go to Step 8.
-   
-   If false → Print "Consonant" → Go to Step 8.
-   
-### Step 7:   
-   Print "Special Symbol".
-### Step 8:   
-  Stop
-# Program:
+
+## RESULT:
+
+Thus the program to read 3 characters one by one and print the characters in a reverse order has been executed successfully.
+
+# EX-02- Conditional-Statements
+
+## AIM:
+
+Write a C program to read A values and check whether A is positive number or not.
+
+# ALGORITHM:
+
+1. Declare a variable to store the input value A.
+2. Use the scanf function to read the value of A from the user.
+3. Check if the value of A is greater than zero.
+4. If A is greater than zero, print a message indicating that it's a positive number.
+5. Otherwise, print a message indicating that it's not a positive number.
+   6.End the program.
+
+# PROGRAM:
+
 ```
 #include <stdio.h>
-int main() { char ch;
-printf("Enter a character: ");
-scanf("%c", &ch);
-(ch >= '0' && ch <= '9') ? printf("Digit\n") :
-((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
-((ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ||ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') ?
-printf("Vowel\n") : printf("Consonant\n")): printf("Special Symbol\n");
-return 0;
+
+int main() {
+    int A;
+
+    printf("Enter a number: ");
+    scanf("%d", &A);
+
+    if (A > 0)
+        printf("%d is a positive number.\n", A);
+    else
+        printf("%d is not a positive number.\n", A);
+
+    return 0;
 }
+
 ```
-# Output:
-<img width="291" height="138" alt="Screenshot 2026-06-01 101903" src="https://github.com/user-attachments/assets/e8697347-e8a5-4a24-85c9-0f5b4d74b8aa" />
+
+# OUTPUT:
+
+<img width="1274" height="746" alt="M12" src="https://github.com/user-attachments/assets/60d2db46-5a68-4cf9-8f5e-d45e3d9eb0f4" />
 
 
-# Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
+# RESULT:
+
+Thus the program to read A values and check whether A is positive number or not has been executed successfully.
+
+# EX-03- Operators-Expressions
+
+## AIM:
+
+Write a program to find minimum between two fraction numbers using conditional operator or ternary operator.
+
+## ALGORITHM:
+
+1. Declare variables to store the two fraction numbers and the result.
+2. Use the printf function to prompt the user to enter the first fraction number (numerator and denominator separately).
+3. Use the scanf function to read the numerator and denominator of the first fraction.
+4. Repeat steps 2 and 3 to get the second fraction from the user.
+5. Calculate the decimal values of both fractions by dividing the numerators by the denominators.
+6. Use the conditional (ternary) operator to compare the decimal values and store the minimum value in the result variable.
+7. Print the minimum value.
+
+## PROGRAM:
+
+```
+#include <stdio.h>
+
+int main() {
+    float a, b, min;
+
+    printf("Enter first number: ");
+    scanf("%f", &a);
+
+    printf("Enter second number: ");
+    scanf("%f", &b);
+
+    min = (a < b) ? a : b;
+
+    printf("Minimum number is: %.2f\n", min);
+
+    return 0;
+}
+
+```
+
+## OUTPUT:
+<img width="1267" height="742" alt="M13" src="https://github.com/user-attachments/assets/b2c67499-8e0c-418b-a052-2a54f8c55df6" />
 
 
+
+## RESULT:
+
+Thus the program to find minimum between two fraction numbers using conditional operator or ternary operator has been executed successfully.
+
+# EX-04- Using Conditional Statements
+
+## AIM:
+
+Write a C program to check whether the input value is equal to 1 using simple if statement
+
+## ALGORITHM:
+
+1. Declare a variable to store the input value.
+2. Use the scanf function to read the input value from the user.
+3. Use an if statement to check if the input value is equal to 1.
+4. If the condition in the if statement is true, print a message indicating that the input value is equal to 1.
+5. Otherwise, print a message indicating that it's not equal to 1.
+6. End the program.
+
+## PROGRAM:
+
+```
+#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    if (num == 1)
+        printf("The number is equal to 1.\n");
+
+    return 0;
+}
+
+```
+
+## OUTPUT:
+<img width="1261" height="746" alt="M14" src="https://github.com/user-attachments/assets/35534009-e1da-41f3-b824-95e41574e678" />
+
+
+## RESULT:
+
+Thus the program to check whether the input value is equal to 1 using simple if statement has been executed successfully
+
+# EX-05- Calculating Total, Percentage, And Division Using Conditional Statements
+
+## AIM:
+
+To write a C program that reads marks of three subjects, calculates the total and percentage, and then determines the division (First, Second, Pass, or Fail) based on the percentage and minimum marks criteria.
+
+## ALGORITHM:
+
+1. Start
+2. Declare integer variables m1, m2, m3 for marks, and float variables tot, per.
+3. Input the marks for three subjects.
+4. Calculate total marks: tot = m1 + m2 + m3
+5. Calculate percentage: per = tot / 3
+6. Display total and percentage.
+7. Check if all marks are greater than or equal to 40:
+8. If yes:
+   a. If percentage >= 60: Print “Division = First”
+   b. Else if percentage >= 48: Print “Division = Second”
+   c. Else if percentage >= 36: Print “Division = Pass”
+9. Else: Print “Division = Fail”
+10. End
+
+## PROGRAM:
+
+```
+#include <stdio.h>
+
+int main() {
+    float m1, m2, m3, total, percentage;
+
+    printf("Enter marks of three subjects: ");
+    scanf("%f %f %f", &m1, &m2, &m3);
+
+
+    total = m1 + m2 + m3;
+    percentage = (total / 300) * 100; // assuming each subject is out of 100
+
+    printf("\nTotal Marks = %.2f", total);
+    printf("\nPercentage = %.2f%%", percentage);
+
+
+    if (m1 < 35 || m2 < 35 || m3 < 35) {
+        printf("\nResult: Fail (Less than 35 marks in one or more subjects)\n");
+    }
+    else {
+        if (percentage >= 60)
+            printf("\nResult: First Division\n");
+        else if (percentage >= 45)
+            printf("\nResult: Second Division\n");
+        else if (percentage >= 35)
+            printf("\nResult: Pass Division\n");
+        else
+            printf("\nResult: Fail\n");
+    }
+
+    return 0;
+}
+
+```
+
+## OUTPUT:
+<img width="1267" height="748" alt="M15" src="https://github.com/user-attachments/assets/9c60742f-6d9b-4163-8a9a-4939d2ed818b" />
+
+
+## RESULT:
+
+The program successfully takes three subject marks, calculates the total and percentage, and correctly determines the division based on predefined grading logic.
